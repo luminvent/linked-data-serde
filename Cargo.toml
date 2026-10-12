@@ -1,0 +1,19 @@
+[package]
+name = "linked-data-serde"
+version = "0.0.1"
+authors = [
+    "Marc-Antoine Arnaud <marc-antoine.arnaud@luminvent.com>",
+]
+edition = "2024"
+license = "MIT"
+description = "Serialize and deserialize linked data objects as JSON, JSON-LD, N-Triples or Turtle"
+repository = "https://github.com/luminvent/linked-data-serde"
+
+[dependencies]
+linked-data-sparql = "0.8.0"
+oxrdfio = "0.2.6"
+serde = "1"
+serde_json = "1"
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
